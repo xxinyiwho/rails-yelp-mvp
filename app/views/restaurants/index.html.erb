@@ -1,0 +1,17 @@
+<div class='container text-center'>
+<h1>My restaurants</h1>
+
+<div class='card's>
+<% @restaurants.each do |rest| %>
+<h2><%= link_to rest.name, restaurant_path(rest) %></h2>
+<p><%= rest.category %></p>
+<% end %>
+
+</div>
+
+<a href="" class='btn btn-primary'><%= link_to 'Add restaurant', new_restaurant_path %></a>
+
+
+</div>
+
+
